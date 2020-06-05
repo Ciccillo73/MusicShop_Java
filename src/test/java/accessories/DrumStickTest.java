@@ -7,23 +7,30 @@ import static org.junit.Assert.*;
 
 public class DrumStickTest {
 
+    DrumStick drumStick;
+
     @Before
-    public void setUp() throws Exception {
+    public void setUp() {
+        drumStick = new DrumStick("2", "Yamaha",5,10);
     }
 
     @Test
     public void getModel() {
+        assertEquals("2", drumStick.getModel());
     }
 
     @Test
     public void getBrand() {
+        assertEquals("Yamaha",drumStick.getBrand());
     }
 
     @Test
     public void getSellingPrice() {
+        assertEquals(5, drumStick.getSellingPrice(),0.01);
     }
 
     @Test
     public void getBuyingPrice() {
+        assertEquals(10, drumStick.getBuyingPrice(),0.01);
     }
 }
