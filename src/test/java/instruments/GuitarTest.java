@@ -18,7 +18,7 @@ public class GuitarTest {
 
     @Test
     public void getModel() {
-        assertEquals(1, guitar.getModel());
+        assertEquals("1", guitar.getModel());
     }
 
     @Test
