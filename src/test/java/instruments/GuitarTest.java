@@ -35,11 +35,11 @@ public class GuitarTest {
     public void getType() {
         assertEquals(InstrumentType.STRING, guitar.getType());
     }
-//
-//    @Test
-//    public void getBuyingPrice() {
-//        assertEquals();
-//    }
+
+    @Test
+    public void getBuyingPrice() {
+        assertEquals(300.00, guitar.getBuyingPrice(),0.01);
+    }
 //
 //    @Test
 //    public void getSellingPrice() {
