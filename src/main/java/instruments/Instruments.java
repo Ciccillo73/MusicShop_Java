@@ -1,15 +1,15 @@
 package instruments;
 
-public abstract class Instrument {
+public abstract class Instruments {
 
     private String model;
     private String brand;
     private String material;
-    private Type type;
+    private InstrumentType type;
     private double buyingPrice;
     private double sellingPrice;
 
-    public Instrument(String model, String brand, String material, Type type, double buyingPrice, double sellingPrice) {
+    public Instruments(String model, String brand, String material, InstrumentType type, double buyingPrice, double sellingPrice) {
         this.model = model;
         this.brand = brand;
         this.material = material;
@@ -30,7 +30,7 @@ public abstract class Instrument {
         return material;
     }
 
-    public Type getType() {
+    public InstrumentType getType() {
         return type;
     }
 
