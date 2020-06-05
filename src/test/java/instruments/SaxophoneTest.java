@@ -36,9 +36,11 @@ public class SaxophoneTest {
         assertEquals(InstrumentType.BRASS, saxophone.getType())
     }
 
-//    @Test
-//    public void getBuyingPrice() {
-//    }
+    @Test
+    public void getBuyingPrice() {
+        assertEquals(1500, saxophone.getBuyingPrice());
+
+    }
 //
 //    @Test
 //    public void getSellingPrice() {
