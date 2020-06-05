@@ -50,4 +50,9 @@ public class PianoTest {
     public void getOctaveNumber() {
         assertEquals(6, piano.getOctaveNumber());
     }
+
+    @Test
+    public void canMakeSound(){
+        assertEquals("do re mi",piano.sound());
+    }
 }
