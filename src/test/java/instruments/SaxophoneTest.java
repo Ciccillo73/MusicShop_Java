@@ -17,17 +17,20 @@ public class SaxophoneTest {
 
     @Test
     public void getModel() {
-        assertEquals("Alto", saxophone.getModel())
+        assertEquals("3", saxophone.getModel());
     }
 
-//    @Test
-//    public void getBrand() {
-//    }
-//
-//    @Test
-//    public void getMaterial() {
-//    }
-//
+
+    @Test
+    public void getBrand() {
+        assertEquals("Alto", saxophone.getBrand());
+    }
+
+    @Test
+    public void getMaterial() {
+        assertEquals("brass", saxophone.getMaterial());
+    }
+
 //    @Test
 //    public void getType() {
 //    }
