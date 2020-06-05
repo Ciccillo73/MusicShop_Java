@@ -30,11 +30,11 @@ public class GuitarTest {
     public void getMaterial() {
         assertEquals("iron", guitar.getMaterial());
     }
-//
-//    @Test
-//    public void getType() {
-//        assertEquals();
-//    }
+
+    @Test
+    public void getType() {
+        assertEquals(InstrumentType.STRING, guitar.getType());
+    }
 //
 //    @Test
 //    public void getBuyingPrice() {
