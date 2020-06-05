@@ -12,5 +12,7 @@ public class Shop {
         this.stock = new ArrayList<ISell>();
     }
 
-
+    public int countStock() {
+        return this.stock.size();
+    }
 }
