@@ -33,20 +33,22 @@ public class SaxophoneTest {
 
     @Test
     public void getType() {
-        assertEquals(InstrumentType.BRASS, saxophone.getType())
+        assertEquals(InstrumentType.BRASS, saxophone.getType());
     }
 
     @Test
     public void getBuyingPrice() {
-        assertEquals(1500, saxophone.getBuyingPrice());
+        assertEquals(1500.00, saxophone.getBuyingPrice(),0.01);
 
     }
-//
-//    @Test
-//    public void getSellingPrice() {
-//    }
-//
-//    @Test
-//    public void getNumberOfValves() {
-//    }
+
+    @Test
+    public void getSellingPrice() {
+        assertEquals(2500.00, saxophone.getSellingPrice(),0.01);
+    }
+
+    @Test
+    public void getNumberOfValves() {
+        assertEquals(4, saxophone.getNumberOfValves());
+    }
 }
