@@ -21,6 +21,8 @@ public class Shop {
     }
 
     public void removeStock(ISell item) {
-        this.stock.remove(item);
+        if(stock.contains(item)) {
+            this.stock.remove(item);
+        }
     }
 }
