@@ -18,31 +18,36 @@ public class PianoTest {
 
     @Test
     public void getModel() {
-        assertEquals(2, piano.getModel());
+        assertEquals("2", piano.getModel());
     }
 
     @Test
     public void getBrand() {
         assertEquals("Yamaha", piano.getBrand());
     }
-//
-//    @Test
-//    public void getMaterial() {
-//    }
-//
-//    @Test
-//    public void getType() {
-//    }
-//
-//    @Test
-//    public void getBuyingPrice() {
-//    }
-//
-//    @Test
-//    public void getSellingPrice() {
-//    }
-//
-//    @Test
-//    public void getOctaveNumber() {
-//    }
+
+    @Test
+    public void getMaterial() {
+        assertEquals("wood", piano.getMaterial());
+    }
+
+    @Test
+    public void getType() {
+        assertEquals(InstrumentType.KEYBOARD, piano.getType());
+    }
+
+    @Test
+    public void getBuyingPrice() {
+        assertEquals(2000, piano.getBuyingPrice(),0.01);
+    }
+
+    @Test
+    public void getSellingPrice() {
+        assertEquals(4000, piano.getSellingPrice(),0.01);
+    }
+
+    @Test
+    public void getOctaveNumber() {
+        assertEquals(6, piano.getOctaveNumber());
+    }
 }
