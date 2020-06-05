@@ -7,11 +7,11 @@ import static org.junit.Assert.*;
 
 public class DrumStickTest {
 
-    DrumStick drumStick;
+    GuitarStrings.DrumStick drumStick;
 
     @Before
     public void setUp() {
-        drumStick = new DrumStick("2", "Yamaha",5,10);
+        drumStick = new GuitarStrings.DrumStick("2", "Yamaha",5,10);
     }
 
     @Test
