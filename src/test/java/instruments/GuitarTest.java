@@ -13,18 +13,18 @@ public class GuitarTest {
 
     @Before
     public void setUp() {
-        guitar = new Guitar("model1", "Gibson", "iron", InstrumentType.STRING, 300,500, 7);
+        guitar = new Guitar("1", "Gibson", "iron", InstrumentType.STRING, 300,500, 7);
     }
 
     @Test
     public void getModel() {
         assertEquals(1, guitar.getModel());
     }
-//
-//    @Test
-//    public void getBrand() {
-//        assertEquals();
-//    }
+
+    @Test
+    public void getBrand() {
+        assertEquals("Gibson", guitar.getBrand());
+    }
 //
 //    @Test
 //    public void getMaterial() {
