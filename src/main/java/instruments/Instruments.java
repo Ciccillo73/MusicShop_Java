@@ -1,6 +1,8 @@
 package instruments;
 
-public abstract class Instruments {
+import behaviours.ISell;
+
+public abstract class Instruments implements ISell {
 
     private String model;
     private String brand;
@@ -40,5 +42,10 @@ public abstract class Instruments {
 
     public double getSellingPrice() {
         return sellingPrice;
+
+    }
+
+    public double calculateMarkUp(){
+        return this.getSellingPrice() - this.getBuyingPrice();
     }
 }
