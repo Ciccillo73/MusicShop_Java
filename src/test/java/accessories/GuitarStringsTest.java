@@ -23,16 +23,16 @@ public class GuitarStringsTest {
 
     @Test
     public void getBrand() {
-        assertEquals("Gibson", ,guitarStrings.getBrand());
+        assertEquals("Gibson",guitarStrings.getBrand());
     }
 
     @Test
     public void getSellingPrice() {
-        assertEquals("10", guitarStrings.getSellingPrice());
+        assertEquals(10, guitarStrings.getSellingPrice(),0.01);
     }
 
     @Test
     public void getBuyingPrice() {
-        assertEquals(20, guitarStrings.getBuyingPrice());
+        assertEquals(20, guitarStrings.getBuyingPrice(),0.01);
     }
 }
