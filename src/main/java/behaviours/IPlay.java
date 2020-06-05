@@ -1,4 +1,7 @@
 package behaviours;
 
-public class IPlay {
+public interface IPlay {
+
+    String sound();
+
 }

@@ -1,6 +1,8 @@
 package instruments;
 
-public class Saxophone extends Instruments{
+import behaviours.IPlay;
+
+public class Saxophone extends Instruments implements IPlay{
 
     private int numberOfValves;
 
@@ -11,5 +13,9 @@ public class Saxophone extends Instruments{
 
     public int getNumberOfValves() {
         return numberOfValves;
+    }
+
+    public String sound() {
+        return "pua pua pua";
     }
 }
