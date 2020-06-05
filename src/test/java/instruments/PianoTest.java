@@ -21,9 +21,10 @@ public class PianoTest {
         assertEquals(2, piano.getModel());
     }
 
-//    @Test
-//    public void getBrand() {
-//    }
+    @Test
+    public void getBrand() {
+        assertEquals("Yamaha", piano.getBrand());
+    }
 //
 //    @Test
 //    public void getMaterial() {
