@@ -26,10 +26,11 @@ public class GuitarStringsTest {
         assertEquals("Gibson", ,guitarStrings.getBrand());
     }
 
-//    @Test
-//    public void getSellingPrice() {
-//    }
-//
+    @Test
+    public void getSellingPrice() {
+        assertEquals("10", guitarStrings.getSellingPrice());
+    }
+
 //    @Test
 //    public void getBuyingPrice() {
 //    }
